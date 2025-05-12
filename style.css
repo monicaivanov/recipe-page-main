@@ -1,3 +1,88 @@
+/* remove default settings*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+/* CSS variables */
+
+:root {
+  --rose-800-clr:hsl(332, 51%, 32%);
+  --rose-50-clr: hsl(330, 100%, 98%);
+  --stone-900-clr: hsl(24, 5%, 18%);
+  --stone-600-clr:hsl(30, 10%, 34%);
+  --stone-150-clr:hsl(30, 18%, 87%);
+  --stone-100-clr: hsl(30, 54%, 90%);
+  --brown-800-clr:hsl(14, 45%, 36%);
+  --white-clr:hsl(0, 0%, 100%);
+
+  --ff: "Young Serif", serif;
+  --fw-light: 400;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  --spacing-100: 8px;
+  --spacing-150: 12px;
+  --spacing-200: 16px;
+  --spacing-300: 24px;
+  --spacing-400: 32px;
+  --spacing-500: 40px;
+  --spacing-600: 48px;
+  --spacing-1600: 128px;
+
+  --fs-h1-desktop: 40px;
+  --fs-h2: 28px;
+  --fs-h3: 20px;
+  --fs-bodytext: 16px;
+  --fs-h1-mobile: 36px;
+}
+
+/* global view - Desktop*/
+
+/* layout */
+
+body {
+  display: grid;
+  width: 100%;
+  min-height: 100vh;
+  place-items: center;
+  gap: var(--spacing-100);
+  padding: var(--spacing-600) var(--spacing-1600);
+ }
+
+.card {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-500);
+}
+
+img {
+    margin: auto;
+    width: 100%;
+    display: block;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-400);
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-300);
+}
+
 
 
 
